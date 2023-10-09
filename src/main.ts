@@ -15,13 +15,13 @@ const user: { name: string; age: number } = {
 };
 
 // Interface
-interface User {
+interface UserInterface {
 	name: string;
 	age?: number;
 	getMessage(): string;
 }
 
-const user2: User = {
+const user2: UserInterface = {
 	name: 'Juan',
 	age: 53,
 	getMessage() {
@@ -29,7 +29,7 @@ const user2: User = {
 	},
 };
 
-const user3: User = {
+const user3: UserInterface = {
 	name: 'James',
 	getMessage() {
 		return 'Hello' + name;
