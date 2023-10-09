@@ -11,3 +11,11 @@ var user = {
     name: 'John',
     age: 35,
 };
+var user2 = {
+    name: 'Juan',
+    age: 53,
+};
+var user3 = {
+    name: 'James',
+    age: 55,
+};
