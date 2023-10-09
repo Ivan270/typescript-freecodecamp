@@ -17,5 +17,4 @@ var user2 = {
 };
 var user3 = {
     name: 'James',
-    age: 55,
 };

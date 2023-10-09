@@ -17,7 +17,7 @@ const user: { name: string; age: number } = {
 // Interface
 interface User {
 	name: string;
-	age: number;
+	age?: number;
 }
 
 const user2: User = {
@@ -27,5 +27,4 @@ const user2: User = {
 
 const user3: User = {
 	name: 'James',
-	age: 55,
 };
