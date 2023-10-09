@@ -14,7 +14,13 @@ var user = {
 var user2 = {
     name: 'Juan',
     age: 53,
+    getMessage: function () {
+        return 'Hello' + name;
+    },
 };
 var user3 = {
     name: 'James',
+    getMessage: function () {
+        return 'Hello' + name;
+    },
 };

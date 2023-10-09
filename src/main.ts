@@ -18,13 +18,20 @@ const user: { name: string; age: number } = {
 interface User {
 	name: string;
 	age?: number;
+	getMessage(): string;
 }
 
 const user2: User = {
 	name: 'Juan',
 	age: 53,
+	getMessage() {
+		return 'Hello' + name;
+	},
 };
 
 const user3: User = {
 	name: 'James',
+	getMessage() {
+		return 'Hello' + name;
+	},
 };
