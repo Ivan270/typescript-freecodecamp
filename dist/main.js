@@ -24,3 +24,9 @@ var user3 = {
         return 'Hello' + name;
     },
 };
+// union operator
+var pageName = '1';
+// Common usage
+// if error doesn't exists, default value should be null
+var errorMessage = null;
+var person = null;

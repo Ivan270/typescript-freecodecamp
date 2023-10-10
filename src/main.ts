@@ -35,3 +35,17 @@ const user3: UserInterface = {
 		return 'Hello' + name;
 	},
 };
+
+// union operator
+let pageName: string | number = '1';
+
+// Common usage
+// if error doesn't exists, default value should be null
+let errorMessage: string | null = null;
+
+interface PersonInterface {
+	name: string;
+	surname: string;
+}
+
+let person: PersonInterface | null = null;
