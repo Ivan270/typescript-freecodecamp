@@ -117,3 +117,41 @@ const userC: UserCInterface<{ meta: string }, string> = {
 	},
 	meta: 'bar',
 };
+
+// Enums
+
+// const statuses = {
+// 	notStarted: 0,
+// 	inProgress: 1,
+// 	done: 2,
+// };
+// console.log(statuses.inProgress) // 1
+
+// It has keys, and the values start from 0 incrementing by 1
+enum Status {
+	NotStarted,
+	InProgress,
+	Done,
+}
+console.log(Status.InProgress); // 1
+
+let notStartedStatus: Status = Status.NotStarted;
+notStartedStatus = Status.Done;
+
+// assign values to enums
+
+enum Status2 {
+	NotStarted = 'notStarted',
+	InProgress = 'inProgress',
+	Done = 'done',
+}
+console.log(Status.InProgress); // 1
+
+let notStartedStatus2: Status2 = Status2.NotStarted;
+notStartedStatus2 = Status2.Done;
+
+// Enums inside interfaces
+interface Task {
+	id: string;
+	status: Status2;
+}

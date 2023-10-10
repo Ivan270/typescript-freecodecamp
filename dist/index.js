@@ -101,3 +101,30 @@ var userC = {
     },
     meta: 'bar',
 };
+// Enums
+// const statuses = {
+// 	notStarted: 0,
+// 	inProgress: 1,
+// 	done: 2,
+// };
+// console.log(statuses.inProgress) // 1
+// It has keys, and the values start from 0 incrementing by 1
+var Status;
+(function (Status) {
+    Status[Status["NotStarted"] = 0] = "NotStarted";
+    Status[Status["InProgress"] = 1] = "InProgress";
+    Status[Status["Done"] = 2] = "Done";
+})(Status || (Status = {}));
+console.log(Status.InProgress); // 1
+var notStartedStatus = Status.NotStarted;
+notStartedStatus = Status.Done;
+// assign values to enums
+var Status2;
+(function (Status2) {
+    Status2["NotStarted"] = "notStarted";
+    Status2["InProgress"] = "inProgress";
+    Status2["Done"] = "done";
+})(Status2 || (Status2 = {}));
+console.log(Status.InProgress); // 1
+var notStartedStatus2 = Status2.NotStarted;
+notStartedStatus2 = Status2.Done;
