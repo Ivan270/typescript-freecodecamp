@@ -32,3 +32,24 @@ var errorMessage = null;
 var person = null;
 var popularTags = ['dragon', 'coffee'];
 var dragonsTag = null;
+// void
+var doSomething = function () {
+    console.log('do something');
+};
+// any
+var foo = 'bar';
+// below console log won't return any TS error
+console.log(foo.bar());
+// never
+var doNever = function () {
+    throw 'never';
+};
+// unknown
+var vAny = 10;
+var vUnknown = 10;
+var s1 = vAny;
+// let s2: string = vUnknown;
+// Assertion
+var s2 = vUnknown;
+var pageNumber = '1';
+var numericPageNumber = pageNumber;

@@ -63,3 +63,31 @@ interface DeveloperInterface {
 }
 const popularTags: PopularTag[] = ['dragon', 'coffee'];
 const dragonsTag: MaybePopularTag = null;
+
+// void
+const doSomething = (): void => {
+	console.log('do something');
+};
+
+// any
+let foo: any = 'bar';
+// below console log won't return any TS error
+console.log(foo.bar());
+
+// never
+const doNever = (): never => {
+	throw 'never';
+};
+
+// unknown
+let vAny: any = 10;
+let vUnknown: unknown = 10;
+
+let s1: string = vAny;
+// let s2: string = vUnknown;
+
+// Assertion
+let s2: string = vUnknown as string;
+
+let pageNumber: string = '1';
+let numericPageNumber: number = pageNumber as unknown as number;
