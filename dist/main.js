@@ -51,5 +51,5 @@ var s1 = vAny;
 // let s2: string = vUnknown;
 // Assertion
 var s2 = vUnknown;
-var pageNumber = '1';
-var numericPageNumber = pageNumber;
+var pagesNumber = '1';
+var numericPageNumber = pagesNumber;

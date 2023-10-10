@@ -89,5 +89,5 @@ let s1: string = vAny;
 // Assertion
 let s2: string = vUnknown as string;
 
-let pageNumber: string = '1';
-let numericPageNumber: number = pageNumber as unknown as number;
+let pagesNumber: string = '1';
+let numericPageNumber: number = pagesNumber as unknown as number;
