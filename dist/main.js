@@ -31,3 +31,4 @@ var pageName = '1';
 var errorMessage = null;
 var person = null;
 var popularTags = ['dragon', 'coffee'];
+var dragonsTag = null;

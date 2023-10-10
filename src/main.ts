@@ -53,6 +53,8 @@ let person: PersonInterface | null = null;
 // Type aliases
 type ID = string;
 type PopularTag = string;
+// This property may not exist
+type MaybePopularTag = PopularTag | null;
 
 interface DeveloperInterface {
 	id: ID;
@@ -60,3 +62,4 @@ interface DeveloperInterface {
 	surname: string;
 }
 const popularTags: PopularTag[] = ['dragon', 'coffee'];
+const dragonsTag: MaybePopularTag = null;
