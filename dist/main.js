@@ -30,3 +30,4 @@ var pageName = '1';
 // if error doesn't exists, default value should be null
 var errorMessage = null;
 var person = null;
+var popularTags = ['dragon', 'coffee'];

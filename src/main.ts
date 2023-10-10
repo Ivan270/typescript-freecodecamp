@@ -49,3 +49,14 @@ interface PersonInterface {
 }
 
 let person: PersonInterface | null = null;
+
+// Type aliases
+type ID = string;
+type PopularTag = string;
+
+interface DeveloperInterface {
+	id: ID;
+	name: string;
+	surname: string;
+}
+const popularTags: PopularTag[] = ['dragon', 'coffee'];
