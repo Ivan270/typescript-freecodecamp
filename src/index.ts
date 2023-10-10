@@ -61,3 +61,59 @@ class Drummer extends Musician {
 	}
 }
 const drummer = new Drummer('Joaquin', 'Verdugo');
+
+// Generics
+// addId has a generic 'T'. All generic data types are written inside <>
+// T extends object-> T by default should be an object
+const addId = <T extends object>(obj: T) => {
+	const id = Math.random().toString(16);
+	return {
+		...obj,
+		id,
+	};
+};
+
+interface UserAInterface {
+	name: string;
+}
+
+const userA: UserAInterface = {
+	name: 'Jack',
+};
+
+const result = addId<UserAInterface>(userA);
+
+// Generic for interfaces
+interface UserBInterface<T> {
+	name: string;
+	data: T;
+}
+
+const userB: UserBInterface<{ meta: string }> = {
+	name: 'John',
+	data: {
+		meta: 'foo',
+	},
+};
+
+// Generic allows to provide different data types, in this case an array
+const userB2: UserBInterface<string[]> = {
+	name: 'James',
+	data: ['foo', 'bar', 'baz'],
+};
+
+// Pass several Data types
+
+interface UserCInterface<T, V> {
+	name: string;
+	data: T;
+	meta: V;
+}
+
+const userC: UserCInterface<{ meta: string }, string> = {
+	name: 'Jimmy',
+	data: {
+		meta: 'foo',
+	},
+	meta: 'bar',
+};
